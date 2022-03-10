@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : Conner Eilenfeldt
+  @group             : 
+  @last modified on  : 03-10-2022
+  @last modified by  : Conner Eilenfeldt
+-->
+<template>
+    <div>
+        <div class="slds-m-bottom_medium">
+            <lightning-button-group>
+                <lightning-button label="+" onclick={handleAddClick}></lightning-button>
+                <lightning-button label="-" onclick={handleRemoveClick}></lightning-button>
+            </lightning-button-group>
+
+            <span style="margin-left: 20px;">{itemCount}</span>
+        </div>
+
+        <div>
+            <lightning-button variant="brand" label="Submit" onclick={handleSubmitClick}></lightning-button>
+        </div>
+    </div>
+</template>

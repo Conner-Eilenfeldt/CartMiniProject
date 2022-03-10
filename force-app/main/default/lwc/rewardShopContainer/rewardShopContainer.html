@@ -1,18 +1,26 @@
 <!--
   @description       : 
-  @author            : Ben Learn
+  @author            : Ben Learn, Conner Eilenfeldt
   @group             : 
-  @last modified on  : 03-09-2022
-  @last modified by  : Ben Learn
+  @last modified on  : 03-10-2022
+  @last modified by  : Conner Eilenfeldt
 -->
 <template>
     <div class="slds-box slds-theme_default">
-        <lightning-layout multiple-rows horizontal-align="spread">
-            <template for:each={rewards} for:item="reward">
-                <lightning-layout-item size="4" padding="around-small" key={reward.title}>
-                    <c-reward-card item-img-url={reward.url} item-title={reward.title}></c-reward-card>
-                </lightning-layout-item>
-            </template>
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="8" padding="around-small">
+                <lightning-layout multiple-rows horizontal-align="spread">
+                    <template for:each={rewards} for:item="reward">
+                        <lightning-layout-item size="4" padding="around-small" key={reward.title}>
+                            <c-reward-card item-img-url={reward.url} item-title={reward.title}></c-reward-card>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </lightning-layout-item>
+            
+            <lightning-layout-item size="4">
+              <c-cart></c-cart>
+            </lightning-layout-item>
         </lightning-layout>
     </div>
 </template>

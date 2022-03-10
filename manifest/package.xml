@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Home_Page_Default</members>
+        <members>Cart_Mini_Project</members>
         <name>FlexiPage</name>
     </types>
 
     <types>
+        <members>cart</members>
+        <members>rewardCardButtons</members>
         <members>rewardCard</members>
         <members>rewardShopContainer</members>
         <name>LightningComponentBundle</name>
+    </types>
+
+    <types>
+        <members>CartMessageChannel</members>
+        <name>LightningMessageChannel</name>
     </types>
 
     <types>

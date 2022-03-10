@@ -1,0 +1,27 @@
+<!--
+  @description       : 
+  @author            : Conner Eilenfeldt
+  @group             : 
+  @last modified on  : 03-10-2022
+  @last modified by  : Conner Eilenfeldt
+-->
+<template>
+    <div class="slds-m-top_large">
+        <lightning-card  title="Cart:">
+            <div class="slds-m-horizontal_x-large slds-m-top_small" style="min-height:290px;">
+                <template for:each={items} for:item="item">
+                    <div key={item.title}>
+                        <lightning-layout>
+                            <lightning-layout-item size="7" padding="around-xxx-small">
+                                &#8226;&emsp; {item.title}
+                            </lightning-layout-item>
+                            <lightning-layout-item size="5" padding="around-xxx-small">
+                                {item.count}
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+</template>
